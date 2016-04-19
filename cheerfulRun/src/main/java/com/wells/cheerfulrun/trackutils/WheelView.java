@@ -1,11 +1,5 @@
 package com.wells.cheerfulrun.trackutils;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -29,6 +23,11 @@ import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
 import com.wells.cheerfulrun.R;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class WheelView extends View {
     private static final int SCROLLING_DURATION = 400;

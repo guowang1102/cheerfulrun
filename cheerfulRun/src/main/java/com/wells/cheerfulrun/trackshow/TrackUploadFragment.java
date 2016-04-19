@@ -1,8 +1,5 @@
 package com.wells.cheerfulrun.trackshow;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -31,9 +28,11 @@ import com.baidu.mapapi.map.PolylineOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.trace.OnStartTraceListener;
 import com.baidu.trace.OnStopTraceListener;
-
 import com.baidu.trace.TraceLocation;
 import com.wells.cheerfulrun.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 轨迹追踪

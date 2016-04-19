@@ -1,8 +1,5 @@
 package com.wells.cheerfulrun.trackshow;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -33,6 +30,9 @@ import com.wells.cheerfulrun.trackutils.DateDialog;
 import com.wells.cheerfulrun.trackutils.DateUtils;
 import com.wells.cheerfulrun.trackutils.GsonService;
 import com.wells.cheerfulrun.trackutils.HistoryTrackData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**

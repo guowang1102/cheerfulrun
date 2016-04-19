@@ -1,17 +1,5 @@
 package com.wells.cheerfulrun.trackshow;
 
-import com.baidu.mapapi.SDKInitializer;
-import com.baidu.mapapi.map.BaiduMap;
-
-import com.baidu.mapapi.map.MapView;
-import com.baidu.trace.LBSTraceClient;
-import com.baidu.trace.LocationMode;
-import com.baidu.trace.OnEntityListener;
-import com.baidu.trace.OnTrackListener;
-import com.baidu.trace.Trace;
-import com.baidu.trace.TraceLocation;
-import com.wells.cheerfulrun.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
@@ -25,6 +13,17 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.baidu.mapapi.SDKInitializer;
+import com.baidu.mapapi.map.BaiduMap;
+import com.baidu.mapapi.map.MapView;
+import com.baidu.trace.LBSTraceClient;
+import com.baidu.trace.LocationMode;
+import com.baidu.trace.OnEntityListener;
+import com.baidu.trace.OnTrackListener;
+import com.baidu.trace.Trace;
+import com.baidu.trace.TraceLocation;
+import com.wells.cheerfulrun.R;
 
 @SuppressLint("NewApi")
 public class MainActivity extends FragmentActivity implements OnClickListener {

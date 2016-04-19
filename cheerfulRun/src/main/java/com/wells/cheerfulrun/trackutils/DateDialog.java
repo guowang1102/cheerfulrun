@@ -1,10 +1,5 @@
 package com.wells.cheerfulrun.trackutils;
 
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.List;
-
-
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
@@ -16,6 +11,10 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.wells.cheerfulrun.R;
+
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.List;
 
 public class DateDialog extends Dialog implements
         View.OnClickListener {
