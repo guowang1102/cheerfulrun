@@ -1,7 +1,5 @@
 package com.wells.cheerfulrun.widget.Wheel;
 
-import com.wells.cheerfulrun.widget.Wheel.WheelAdapter;
-
 public class NumericWheelAdapter implements WheelAdapter {
 
     public static final int DEFAULT_MAX_VALUE = 9;

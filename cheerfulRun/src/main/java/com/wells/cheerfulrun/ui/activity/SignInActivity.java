@@ -5,13 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
-import com.wells.cheerfulrun.app.Config;
 import com.wells.cheerfulrun.R;
+import com.wells.cheerfulrun.app.Config;
 import com.wells.cheerfulrun.utils.PrefsUtil;
 
 import org.json.JSONException;

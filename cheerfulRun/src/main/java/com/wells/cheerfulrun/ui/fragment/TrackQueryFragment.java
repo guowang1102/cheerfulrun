@@ -26,11 +26,11 @@ import com.baidu.mapapi.map.PolylineOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.model.LatLngBounds;
 import com.wells.cheerfulrun.R;
-import com.wells.cheerfulrun.ui.activity.MainActivity;
-import com.wells.cheerfulrun.widget.DateDialog;
-import com.wells.cheerfulrun.utils.DateUtils;
 import com.wells.cheerfulrun.parse.GsonService;
 import com.wells.cheerfulrun.track.HistoryTrackData;
+import com.wells.cheerfulrun.ui.activity.MainActivity;
+import com.wells.cheerfulrun.utils.DateUtils;
+import com.wells.cheerfulrun.widget.DateDialog;
 
 import java.util.ArrayList;
 import java.util.List;
