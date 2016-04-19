@@ -24,9 +24,9 @@ import cn.bmob.v3.listener.OtherLoginListener;
 /**
  * Created by wei on 16/4/17.
  */
-public class SignInActivity extends Activity  {
+public class SignInActivity extends BaseActivity  {
 
-    PrefsUtil prefsUtil = PrefsUtil.getInstance();
+    private PrefsUtil prefsUtil = PrefsUtil.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,9 +130,7 @@ public class SignInActivity extends Activity  {
         });
     }
 
-    private void toast(String msg){
-        Toast.makeText(SignInActivity.this, msg, Toast.LENGTH_SHORT).show();
-    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
