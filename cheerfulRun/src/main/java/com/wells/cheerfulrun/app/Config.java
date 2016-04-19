@@ -1,9 +1,9 @@
-package com.wells.cheerfulrun;
+package com.wells.cheerfulrun.app;
 
 /**
  * Created by wei on 16/4/17.
  */
-public class Constants {
+public class Config {
 
 
     /** Bmob APP_ID */

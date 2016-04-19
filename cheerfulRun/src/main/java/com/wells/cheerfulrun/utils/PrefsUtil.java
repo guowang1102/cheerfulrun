@@ -3,10 +3,10 @@ package com.wells.cheerfulrun.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.wells.cheerfulrun.base.ClientApp;
+import com.wells.cheerfulrun.app.ClientApp;
 
 /**
- * Created by wei on 16/4/17.
+ * SharedPreferences 工具类
  */
 public class PrefsUtil {
 

@@ -1,4 +1,4 @@
-package com.wells.cheerfulrun.base;
+package com.wells.cheerfulrun.app;
 
 import android.app.Application;
 

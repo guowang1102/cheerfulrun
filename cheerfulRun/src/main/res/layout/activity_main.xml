@@ -11,13 +11,13 @@
 
     <fragment
         android:id="@+id/fragment_title"
-        android:name="com.wells.cheerfulrun.trackshow.TitleFragment"
+        android:name="com.wells.cheerfulrun.ui.fragment.TitleFragment"
         android:layout_width="match_parent"
         android:layout_height="45dp" />
 
     <fragment
         android:id="@+id/fragment_bottom"
-        android:name="com.wells.cheerfulrun.trackshow.BottomFragment"
+        android:name="com.wells.cheerfulrun.ui.fragment.BottomFragment"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"

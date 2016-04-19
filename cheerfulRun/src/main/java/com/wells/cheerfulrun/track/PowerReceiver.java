@@ -1,9 +1,11 @@
-package com.wells.cheerfulrun.trackshow;
+package com.wells.cheerfulrun.track;
 
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+
+import com.wells.cheerfulrun.ui.fragment.TrackUploadFragment;
 
 public class PowerReceiver extends BroadcastReceiver {
 

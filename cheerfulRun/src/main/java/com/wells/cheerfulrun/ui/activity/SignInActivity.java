@@ -10,9 +10,8 @@ import android.widget.Toast;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
-import com.wells.cheerfulrun.Constants;
+import com.wells.cheerfulrun.app.Config;
 import com.wells.cheerfulrun.R;
-import com.wells.cheerfulrun.trackshow.MainActivity;
 import com.wells.cheerfulrun.utils.PrefsUtil;
 
 import org.json.JSONException;
@@ -33,7 +32,7 @@ public class SignInActivity extends Activity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        Bmob.initialize(this,Constants.BMOB_APPID);
+        Bmob.initialize(this, Config.BMOB_APPID);
     }
 
     public void doLogin(View view) {
@@ -51,12 +50,12 @@ public class SignInActivity extends Activity  {
 
     private void qqAuthorize(){
 
-        String openid = prefsUtil.getPrefsStrValue(Constants.KEY_QQ_OPENID);
-        String access_token = prefsUtil.getPrefsStrValue(Constants.KEY_QQ_TOKEN);
-        String expires_in = prefsUtil.getPrefsStrValue(Constants.KEY_QQ_EXPIRES);
+        String openid = prefsUtil.getPrefsStrValue(Config.KEY_QQ_OPENID);
+        String access_token = prefsUtil.getPrefsStrValue(Config.KEY_QQ_TOKEN);
+        String expires_in = prefsUtil.getPrefsStrValue(Config.KEY_QQ_EXPIRES);
 
         if(mTencent==null){
-            mTencent = Tencent.createInstance(Constants.QQ_APP_ID,getApplicationContext());
+            mTencent = Tencent.createInstance(Config.QQ_APP_ID,getApplicationContext());
         }
 //        mTencent.logout(this);
         if(!openid.isEmpty()&&!access_token.isEmpty()&&!expires_in.isEmpty()){
@@ -82,10 +81,10 @@ public class SignInActivity extends Activity  {
                     String expires = jsonObject.getString(com.tencent.connect.common.Constants.PARAM_EXPIRES_IN);
                     String openId = jsonObject.getString(com.tencent.connect.common.Constants.PARAM_OPEN_ID);
 
-                    prefsUtil.setPrefsStrValue(Constants.KEY_QQ_TOKEN,token);
-                    prefsUtil.setPrefsStrValue(Constants.KEY_QQ_OPENID,openId);
+                    prefsUtil.setPrefsStrValue(Config.KEY_QQ_TOKEN,token);
+                    prefsUtil.setPrefsStrValue(Config.KEY_QQ_OPENID,openId);
                     String dealExpires = String.valueOf(System.currentTimeMillis() + Long.parseLong(expires) * 1000);  //需处理
-                    prefsUtil.setPrefsStrValue(Constants.KEY_QQ_EXPIRES,dealExpires);
+                    prefsUtil.setPrefsStrValue(Config.KEY_QQ_EXPIRES,dealExpires);
 
                     BmobUser.BmobThirdUserAuth authInfo = new BmobUser.BmobThirdUserAuth(BmobUser.BmobThirdUserAuth.SNS_TYPE_QQ,token, expires,openId);
                     loginWithAuth(authInfo);
