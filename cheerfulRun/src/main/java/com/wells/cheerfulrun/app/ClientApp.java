@@ -27,5 +27,6 @@ public class ClientApp extends Application {
         for(Activity activity:activityList){
             activity.finish();
         }
+
     }
 }
