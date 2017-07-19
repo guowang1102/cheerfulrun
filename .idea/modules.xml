@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cheerfulRun.iml" filepath="$PROJECT_DIR$/cheerfulRun.iml" />
       <module fileurl="file://$PROJECT_DIR$/cheerfulRun/cheerfulRun.iml" filepath="$PROJECT_DIR$/cheerfulRun/cheerfulRun.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cheerfulrun.iml" filepath="$PROJECT_DIR$/cheerfulrun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cheerfulRun/cheerfulRun-cheerfulRun.iml" filepath="$PROJECT_DIR$/cheerfulRun/cheerfulRun-cheerfulRun.iml" />
     </modules>
   </component>
 </project>
